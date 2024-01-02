@@ -1,0 +1,11 @@
+{
+  "require": {
+    "phpmailer/phpmailer": "*"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "C:\\Users\\ESL0487\\Documents\\ConcertLoad\\PHPMailer-master"
+    }
+  ]
+}

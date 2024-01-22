@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Contato</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" conect="width=device, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Enviar um Email</title>
+        <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h2>Escreva sua Carta</h2>
+    
+"
+        </div>
+    <div class="form">
+        <h1>Contact us</h1>
+        <form action="https://formsubmit.co/davidscaletchirei@gmail.com" method="POST">
+            <input type="text" name="name" required placeholder="Name">
+            <input type="email" name="email" required placeholder="Email">
+            <input type="assunto" name="assunto" required placeholder="Assunto">
+            <textarea name="mensagem" required placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
 
-    <form id="formCarta">
-        <label for="carta">Carta:</label>
-        <textarea id="carta" name="carta" rows="8" required></textarea>
-
-        <button type="button" onclick="enviarEmail()">Enviar Carta</button>
-    </form>
-
-    <script src="jscript.js"></script>
 
 </body>
+
+
 </html>

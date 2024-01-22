@@ -4,21 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "baf0b1b659e688a64051c5ee9742a77e",
+    "content-hash": "7c3a139d6e8f0bd59f5c200fc8ec19b6",
     "packages": [
         {
             "name": "phpmailer/phpmailer",
             "version": "v6.9.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "039de174cd9c17a8389754d3b877a2ed22743e18"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/039de174cd9c17a8389754d3b877a2ed22743e18",
-                "reference": "039de174cd9c17a8389754d3b877a2ed22743e18",
-                "shasum": ""
+                "type": "path",
+                "url": "C:/Users/ESL0487/Documents/ConcertLoad/vendor/phpmailer/phpmailer",
+                "reference": "039de174cd9c17a8389754d3b877a2ed22743e18"
             },
             "require": {
                 "ext-ctype": "*",
@@ -53,7 +47,25 @@
                     "PHPMailer\\PHPMailer\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "PHPMailer\\Test\\": "test/"
+                }
+            },
+            "scripts": {
+                "check": [
+                    "./vendor/bin/phpcs"
+                ],
+                "test": [
+                    "./vendor/bin/phpunit --no-coverage"
+                ],
+                "coverage": [
+                    "./vendor/bin/phpunit"
+                ],
+                "lint": [
+                    "@php ./vendor/php-parallel-lint/php-parallel-lint/parallel-lint . --show-deprecated -e php,phps --exclude vendor --exclude .git --exclude build"
+                ]
+            },
             "license": [
                 "LGPL-2.1-only"
             ],
@@ -75,17 +87,15 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "support": {
-                "issues": "https://github.com/PHPMailer/PHPMailer/issues",
-                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.9.1"
-            },
             "funding": [
                 {
                     "url": "https://github.com/Synchro",
                     "type": "github"
                 }
             ],
-            "time": "2023-11-25T22:23:28+00:00"
+            "transport-options": {
+                "relative": false
+            }
         }
     ],
     "packages-dev": [],

@@ -128,13 +128,13 @@ li {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-    background-color: rgb(188, 0, 212);
+    background-color: rgb(0, 212, 28);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(3, 104, 187);
+    background-color: rgb(24, 187, 3);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -238,7 +238,7 @@ li {
 }
 
 .background {
-    background-image: url('../images/festival-slider-backround1.jpg');
+    background-image: url('../images/20220702_Goldband_Rock-Werchter_Photo-Ben-Houdijk_lr_7702.jpeg');
     background-size: cover;
    
     background-repeat: repeat;
@@ -591,12 +591,12 @@ textarea.form-control {
 .btn-primary:hover {
     color: #fff;
     background-color: rgb(188, 0, 212);
-    border-color:rgb(128, 3, 145);
+    border-color:rgb(145, 3, 121);
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(75, 156, 243, 0.5);
 }
 
 .btn-primary.disabled,
@@ -617,7 +617,7 @@ textarea.form-control {
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(39, 1, 82, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(1, 82, 25, 0.5);
 }
 
 
@@ -645,8 +645,8 @@ input {
 }
 
 footer {
-    background-color: rgb(106, 35, 173);
-    border-top: 1px solid #efebeb;
+    background-color: rgb(0, 72, 121);
+    border-top: 1px solid #ecefeb;
     padding: 1rem 0;
     bottom: 0;
     font-size: 12px;
@@ -694,7 +694,7 @@ footer {
 
 .dbox .icon span {
     font-size: 20px;
-    color: rgb(255, 8, 181);
+    color: rgb(0, 0, 0);
 }
 
 .dbox .text {

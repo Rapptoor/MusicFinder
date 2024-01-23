@@ -1,7 +1,13 @@
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s; /* Adjust the duration as needed */
+    animation-timing-function: ease-in-out; /* Adjust the timing function as needed */
+}
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
-        transform: translate3d(0, -100%, 0); /*-10px,40px,100px*/
+        transform: translate3d(0, -100%, 0);
     }
 
     to {
@@ -10,8 +16,11 @@
     }
 }
 
-.fadeInDown {
-    animation-name: fadeInDown;
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s; /* Adjust the duration as needed */
+    animation-timing-function: ease-in-out; /* Adjust the timing function as needed */
 }
 
 @keyframes fadeInUp {
@@ -20,11 +29,17 @@
         transform: translate3d(0, 100%, 0);
     }
 
+    50% {
+        opacity: 0.8;
+        transform: translate3d(0, -50px, 0); /* Adjust the bounce height as needed */
+    }
+
     to {
         opacity: 1;
         transform: none;
     }
 }
+
 
 .fadeInUp {
     animation-name: fadeInUp;

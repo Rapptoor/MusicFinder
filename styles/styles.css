@@ -48,20 +48,20 @@ body {
     justify-content: center;
     width: 100%;
     height: 80px;
-    background-color: rgb(106, 35, 173);
+    background-color: rgba(61, 61, 61, 0.5);
     font-weight: 200;
-    color: rgb(128, 0, 117);
+    color: rgba(61, 61, 61, 0.5);
     align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    border-bottom: 1px solid #efebeb;
+    border-bottom: 1px solid rgba(61, 61, 61, 0.0);
 }
 
 .main_title {
     padding-left: 160px;
-    font-size: 34px;
+    font-size: 40px;
     font-weight: bold;
     padding-bottom: 5px;
     line-height: normal;
@@ -90,7 +90,7 @@ body {
 }
 
 .menu_item nav ul li a:hover {
-    background-color: rgb(188, 0, 212);
+    background-color: rgba(61, 61, 61, 0.5);
 }
 
 .menu_item {
@@ -113,28 +113,28 @@ li {
     font-size: inherit;
     border: none;
     outline: none;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 15px 37px;
     border-radius: 3px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-    align-items: center;
+    align-items: right;
 }
 
 .main_title:hover {
-    color: rgb(255, 0, 157);
+    color: rgb(53, 53, 53);
 }
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-    background-color: rgb(0, 212, 28);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(24, 187, 3);
+    
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -150,7 +150,7 @@ li {
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(184, 0, 159);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .dropdown:hover .dropdown-content {
@@ -161,7 +161,7 @@ li {
     font-size: 60px;
     font-family: Courgette;
     line-height: 1.1;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     position: relative;
     top: 80px;
@@ -169,9 +169,9 @@ li {
 }
 
 .undertit1 {
-    font-family: Poppins;
+    font-family: Comic Sans;
     font-size: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -180,9 +180,9 @@ li {
 }
 
 .takealook {
-    font-family: Courgette;
-    font-size: 50px;
-    color: white;
+    font-family: take a look at the concerts;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
     text-align: center;
     position: relative;
     font-weight: 800;
@@ -190,15 +190,15 @@ li {
 }
 
 .takealook:hover {
-    color: crimson;
+    color: rgba(255, 255, 255, 0.692);
 }
 
 .tit1 {
-    font-family: Poppins;
+    font-family: Comic Sans;
     font-weight: 700;
     font-size: 90px;
     line-height: 0.75em;
-    color: white;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 10px;
     text-align: center;
@@ -209,7 +209,7 @@ li {
 }
 
 .tit2 {
-    font-family: Poppins;
+    font-family: Comic Sans;
     font-weight: 700;
     font-size: 90px;
     line-height: 1.1;
@@ -610,14 +610,14 @@ textarea.form-control {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: rgb(188, 0, 212);
-    border-color:rgb(128, 3, 145);
+    background-color: rgb(0, 162, 212);
+    border-color:rgb(3, 69, 145);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(1, 82, 25, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(77, 77, 77, 0.637);
 }
 
 
@@ -645,12 +645,13 @@ input {
 }
 
 footer {
-    background-color: rgb(0, 72, 121);
-    border-top: 1px solid #ecefeb;
+    background-color: rgb(0, 0, 0); 
+    border-top: 1px rgb(0, 0, 0);
     padding: 1rem 0;
     bottom: 0;
     font-size: 12px;
 }
+
 
 .foot_container {
     width: 100%;
@@ -694,7 +695,7 @@ footer {
 
 .dbox .icon span {
     font-size: 20px;
-    color: rgb(0, 255, 234);
+    color: rgb(0, 0, 0);
 }
 
 .dbox .text {

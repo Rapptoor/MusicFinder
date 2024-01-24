@@ -493,7 +493,7 @@ textarea.form-control {
 }
 
 .contact-wrap {
-    background: beige;
+    background: rgba(182, 181, 181, 0.5);
 }
 
 .container {
@@ -725,4 +725,18 @@ footer {
 
 section {
     display: block;
+}
+
+
+#botonSend {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba#ffffff5e;
+    border-color: rgba(201, 199, 199, 0.603);
+    color: #000000;
+
+
+
+    
+
 }

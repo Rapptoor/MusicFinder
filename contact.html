@@ -8,6 +8,108 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/animate.css">
     <script src="scripts/jscripts.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" conect="width=device, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Enviar um Email</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+        input[name="name"] {
+            
+            background-color: rgba(0, 0, 0, 0.2); 
+            
+            border: 1px solid #ccc;
+            padding: 5px;
+            /* ... */
+        }
+    </style>
+
+<style>
+        
+    input[name="email"] {
+        
+        background-color: rgba(0, 0, 0, 0.2); 
+        
+        border: 1px solid #ccc;
+        padding: 5px;
+        /* ... */
+    }
+</style>
+
+<style>
+        
+    input[name="assunto"] {
+        
+        background-color: rgba(0, 0, 0, 0.2); 
+        
+        border: 1px solid #ccc;
+        padding: 5px;
+        /* ... */
+    }
+</style>
+
+<style>
+    
+    textarea[name="mensagem"] {
+        
+        background-color: rgba(0, 0, 0, 0.2); 
+        
+        border: 1px solid #ccc;
+        padding: 5px;
+        /* ... */
+    }
+</style>
+
+<style>
+    /* Estilo para o formulário */
+    form {
+        max-width: 400px; /* Ajuste conforme necessário */
+        margin: 0 auto; /* Centraliza o formulário */
+    }
+
+    /* Estilo para os campos de entrada e a textarea */
+    input, textarea {
+        display: block;
+        width: 100%; /* Preenche a largura do contêiner */
+        margin-bottom: 10px; /* Adapte conforme necessário para o espaçamento desejado */
+        padding: 8px;
+        box-sizing: border-box; /* Garante que o preenchimento não aumente o tamanho total */
+    }
+
+    /* Estilo para o botão */
+    button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: rgba#141414;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* Estilo adicional conforme necessário */
+    label {
+        margin-bottom: 5px;
+        display: block;
+    }
+</style>
+
+<style>
+    /* Estilo para centralizar o título */
+    h1 {
+        text-align: center; /* Centraliza o texto horizontalmente */
+        margin-top: 50px; /* Adapte conforme necessário para o espaçamento desejado */
+    }
+</style>
+
+
+
+
+
 </head>
 
 <body>
@@ -20,25 +122,11 @@
             <div class="menu_item">
                 <nav>
                     <ul>
-                        <li class="dropdown"><a class="dropbtn"><i class="fas fa-utensils">
-                                </i> MENU <i class="fas fa-caret-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="menu.html#secSoups" target="_self">2024</a>
-                                <a href="menu.html#secAppetizers" target="_self">2025</a>
-                                <a href="menu.html#secEntree" target="_self">2026</a>
-                                <a href="menu.html#secDesserts" target="_self">2027</a>
-                                <a href="menu.html#secDrinks" target="_self">2028</a>
-                            </div>
-                        </li>
+                        
                         <li>
-                            <a href="reservation.html"><i class="fas fa-calendar-check"></i> RESERVATIONS</a>
+                            <a href="index.html"><i style='font-size:24px' class='fas'>&#xf0a8;</i> Main</a>
                         </li>
-                        <li>
-                            <a href="about.html" target="_self"><i class="fas fa-address-card"></i> ABOUT US</a>
-                        </li>
-                        <li>
-                             <a href="contact.html" target="_self"><i class="fas fa-phone"></i> CONTACT</a>
-                        </li>
+                        
                     </ul>
                 </nav>
             </div>
@@ -47,18 +135,21 @@
 
         <div>
             <div>
-                <p class="txt1 animated fadeInDown">
-                    Welcome to
-                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+
             </div>
-            <div>
-                <p class="tit1 animated fadeInUp">FESTIVAL<br><span class="undertit1">Finder</span></p>
-            </div>
+           <br>
+           <br>
+           <br>
             <div>
                 <br>
-                <p class="tit1 animated fadeInUp">
-                    Contact Us
-                </p>
+                <br>
+                <br>
+                <br>
             </div>
         </div>
         <div class="backgroundTable1">
@@ -73,40 +164,30 @@
                                             <form method="post" id="contactForm" name="contactForm" class="contactForm" onsubmit="return validateForm()">
                                                 <div class="row">
                                                     <div class="col-md-6">
+                                                        <form action="https://formsubmit.co/festivalfinderpt@gmail.com" method="POST"></form>
                                                         <div class="form-group">
-                                                            <label class="label" for="fname">Full Name</label>
-                                                            <input type="text" class="form-control" name="fname" id="fname" placeholder="Name">
-                                                            <label class="labelmsg" id="msgName"></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="label" for="femail">Email Address</label>
-                                                            <input type="email" class="form-control" name="femail" id="femail" placeholder="Email">
-                                                            <label class="labelmsg" id="msgEmail"></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label class="label" for="fsubject">Subject</label>
-                                                            <input type="text" class="form-control" name="fsubject" id="fsubject" placeholder="Subject">
-                                                            <label class="labelmsg" id="msgSubject"></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label class="label" for="fmessage">Message</label>
-                                                            <textarea name="fmessage" class="form-control" id="fmessage" cols="30" rows="4" placeholder="Message"></textarea>
-                                                            <label class="labelmsg" id="msgMessage"></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <input type="submit" value="Send Message" class="btn btn-primary">
-                                                            <div class="submitting"></div>
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="form">
+                                                    <h1>Contact us</h1>
+                                                    <form action="https://formsubmit.co/festivalfinderpt@gmail.com" method="POST">
+                                                        <label for="name">Name:</label>
+                                                        <input type="text" name="name" required placeholder="Name">
+                                                
+                                                        <label for="email">Email:</label>
+                                                        <input type="email" name="email" required placeholder="Email">
+                                                
+                                                        <label for="assunto">Subject:</label>
+                                                        <input type="text" name="assunto" required placeholder="Subject">
+                                                
+                                                        <label for="mensagem">Message:</label>
+                                                        <textarea name="mensagem" required placeholder="Message"></textarea>
+                                                
+                                                        <button id="botonSend" type="submit">Send</button>
+                                                    </form>
+                                                  
                                             </form>
                                         </div>
                                     </div>
@@ -133,7 +214,7 @@
                         <span class="fas fa-map-marker-alt fa-spin"></span>
                     </div>
                     <div class="text">
-                        <p><span>Address:</span> 593 Main St. New York NY 10016</p>
+                        <p><span>Address:</span>Faro</p>
                     </div>
                 </div>
                 <div class="dbox w-100 text-center">
@@ -141,7 +222,7 @@
                         <span class="fas fa-phone"></span>
                     </div>
                     <div class="text">
-                        <p><span>Phone:</span> <a href="tel://1234567920">+ 1593 0593 98</a></p>
+                        <p><span>Phone:</span> <a href="tel://1234567920">912 637 298</a></p>
                     </div>
                 </div>
                 <div class="dbox w-100 text-center">
@@ -149,7 +230,7 @@
                         <span class="fas fa-envelope"></span>
                     </div>
                     <div class="text">
-                        <p><span>Email:</span> <a href="mailto:info@salango.com">info@salango.com</a></p>
+                        <p><span>Email:</span> <a href="mailto:info@salango.com">festivalfinderpt@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="dbox w-100 text-center">
@@ -157,7 +238,7 @@
                         <span class="fas fa-globe"></span>
                     </div>
                     <div class="text">
-                        <p><span>Website:</span> <a href="#">salango.com</a></p>
+                        <p><span>Website:</span> <a href="#">festivalfinder.pt</a></p>
                     </div>
                 </div>
             </div>
@@ -167,3 +248,4 @@
 </body>
 
 </html>
+  

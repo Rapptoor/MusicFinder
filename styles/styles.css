@@ -286,6 +286,7 @@ li {
     top: 150px;
     z-index: 10;
     position: inherit;
+    padding: 30px;
 }
 
 .table1 {

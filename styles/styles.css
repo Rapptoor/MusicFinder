@@ -1,4 +1,4 @@
-@font-face {
+@font-face {1
     font-family: 'Plain';
     src: url('../webfonts/Plain-Regular.woff2') format('woff2'),
         url('../webfonts/Plain-Regular.woff') format('woff');
@@ -377,10 +377,10 @@ li {
     display: -ms-flexbox;
 */
     display: flex;
-    /*    -ms-flex-wrap: wrap;*/
+    
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -20px;
+    margin-left: -20px;
 }
 
 .col-md-12,
@@ -435,6 +435,7 @@ li {
 }
 
 .form-control {
+    position: center;
     display: block;
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
@@ -446,7 +447,7 @@ li {
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
-    border-radius: 0.25rem;
+    border-radius: 30;
 }
 
 .contactForm .form-control {
@@ -494,7 +495,8 @@ textarea.form-control {
 }
 
 .contact-wrap {
-    background: rgba(182, 181, 181, 0.5);
+    background: rgba(0, 0, 0, 0.2);
+    position: center;
 }
 
 .container {
@@ -730,12 +732,16 @@ section {
 
 
 #botonSend {
-    padding:10px;
-    border-radius: 10px;
+    padding:5px;
+    background-position-x: -12;
+    background-position-y: 10;
+    border-radius: 30px;
+    position: left;
     background-color: rgba#ffffff5e;
     border-color: rgba(201, 199, 199, 0.603);
     color: #000000;
-
+    top: 10px;
+    left: auto;
 
 
     
